@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Flood';
+  src: url('../flood-std/FloodStd.otf');
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #354463;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  text-align: center;
+  padding: 1vw;
+  color: #354463;
+}
+header a {
+  text-decoration: none;
+  color: #354463;
+}
+.donation-form {
+  display: grid;
+  color: white;
+  padding: 2em;
+  grid-row-gap: 2.5em;
+  background-image: url('../assets/donation/annie-spratt-427340-unsplash-\(1\).png');
+  background-position: center;
+  background-size: cover;
+}
+input,
+select {
+  width: 100%;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  background-color: #354463;
+  border: none;
+  color: #c1f7d5;
+  border-bottom: 2px solid #c1f7d5;
+  margin-bottom: 6vw;
+}
+label {
+  padding-bottom: 0.5em;
+  font-size: 0.7em;
+}
+h1 {
+  color: white;
+  font-size: 5.5vw;
+  margin-bottom: 2vw;
+}
+.details {
+  display: grid;
+  color: white;
+  background-color: #354463;
+  padding: 1em;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+}
+.form-input-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+.form-city-name {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+.card-expiration-date {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-column-gap: 2.5em;
+}
+.payment-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5em;
+}
+.payment-button button {
+  padding: 0.6em 0em 0.6em 0em;
+  border-radius: 3em;
+  font-weight: bold;
+  background-color: #c1f7d5;
+  color: #354463;
+  border: none;
+}
+.payment-button a {
+  color: #c1f7d5;
+}
+.quote p {
+  font-family: 'Flood';
+  font-size: 8vw;
+  color: white;
+}
+hr {
+  display: none;
+}
+.link {
+  color: rgba(53, 68, 99, 1);
+  text-decoration: underline;
+  margin-top: 3vw;
+}
+.label-adjustment {
+  color: white;
+}
+.content-container {
+  display: flex;
+  width: 80vw;
+}
+/* #logo-footer-div a {
+  font: Bold 1.5vw Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #354463;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.contact-us {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.links {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#follow-us {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-div {
+  background-color: blue;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 8vw;
+  margin:auto;
+  background-color: blueviolet;
+}
+#follow-us {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid: column gap 2vw;;
+  background-color: thistle;
+}
+.contact-us {
+  grid-column-start: 2;
+  background-color: teal;
+}
+.links {
+  background-color: tomato;
+}
+.stop-climate-logo {
+  grid-column-start: 2;
+  background-color: turquoise;
+}
+#logo-footer-div {
+  grid-row-start: 1;
+  background-color: violet;
+  width: 27vw;
+}
+#logo-footer-div a {
+  font-size: 5vw;
+}
+.stop-climate-logo a {
+  font-size: 13vw;
+}
+.footer-div p a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  line-height: 2.3vh;
+}
+.stop-climate-logo {
+  text-align: right;
+}
+.stop-climate-logo a {
+  color: #354463;
+  text-decoration: none;
+  font-size: 4vh;
+  font-family: stop-climate-font;
+} */
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 2em;
+    font-size: 1.5em;
+  }
+  input,
+  select {
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  .quote p {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .donation-form {
+    padding: 4em;
+  }
+  .details {
+    padding: 4em;
+  }
+  .payment-button {
+    grid-template-columns: 1fr 1fr;
+  }
+  .payment-button button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .payment-button a {
+    align-self: end;
+    font-size: 1.2em;
+    grid-row: 1/2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 1.5em;
+  }
+  .quote {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .quote p {
+    font-size: 6vw;
+  }
+  .details {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  h1 {
+    color: white;
+    font-size: 2.1vw;
+  }
+}
